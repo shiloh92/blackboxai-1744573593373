@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    position: relative;
+}
+
+canvas {
+    background-color: #FFD700;
+    background-image: 
+        linear-gradient(#FFD700 1px, transparent 1px),
+        linear-gradient(90deg, #FFD700 1px, transparent 1px);
+    background-size: 20px 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.ui-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.happiness-meter {
+    font-size: 16px;
+    color: #333;
+}
+
+.status-bar {
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    border-radius: 4px;
+    transform: translate(-30px, -25px);
+}
+
+.nap-bar {
+    background-color: #7B68EE;
+}
+
+.hunger-bar {
+    background-color: #FF6347;
+}
+
+.fun-bar {
+    background-color: #32CD32;
+}
+
+.status-label {
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    transform: translate(-30px, -40px);
+    text-shadow: 1px 1px 1px black;
+}
